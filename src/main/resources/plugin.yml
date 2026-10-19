@@ -1,0 +1,22 @@
+name: EnchantShop
+main: net.squidnetwork.enchantshop.EnchantShopPlugin
+version: '${project.version}'
+api-version: '26.3'
+author: SquidNetwork
+description: Toko enchant berdasarkan item yang dipegang (GUI Java, Form Bedrock)
+depend: [Vault]
+softdepend: [floodgate, Geyser-Spigot]
+
+commands:
+  eshop:
+    description: Buka EnchantShop sesuai item yang dipegang
+    aliases: [enchantshop]
+    usage: /<command> [reload]
+
+permissions:
+  enchantshop.use:
+    description: Boleh membuka EnchantShop
+    default: true
+  enchantshop.reload:
+    description: Boleh reload konfigurasi EnchantShop
+    default: op
